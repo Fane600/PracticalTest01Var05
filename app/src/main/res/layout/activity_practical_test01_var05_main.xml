@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOP LEFT"
+        app:layout_constraintBottom_toBottomOf="@+id/button_top_right"
+        app:layout_constraintEnd_toStartOf="@+id/button_top_right"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_top_right"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="TOP RIGHT"
+        app:layout_constraintBottom_toTopOf="@+id/button_bottom_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_secondary_activity"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Button
+        android:id="@+id/button_bottom_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="48dp"
+        android:text="Bottom Left"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_bottom_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom RIght"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toEndOf="@+id/button_bottom_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/button_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        app:layout_constraintBottom_toTopOf="@+id/button_bottom_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_top_left" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="51dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_bottom_right" />
+
+    <Button
+        android:id="@+id/button_secondary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigate to Secondary activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
